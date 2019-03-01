@@ -1,0 +1,1301 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 22px;
+}
+
+nav {
+    z-index: 2;
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 100vh;
+    width: 15%;
+    background: radial-gradient(white, #def9f8);
+    font-size: 20px;
+    border-left: 1px solid black;
+}
+
+nav ul {
+    top: 20.2%;
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    left: 10px;
+}
+
+nav li {
+    height: 50px;
+    line-height: 50px;
+    vertical-align: center;
+    border-style: solid;
+    border-image: linear-gradient(to right, black 0%, white 100%);
+    border-image-slice: 1;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.navUpper {
+    opacity: 1;
+    background-color: white;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#containerUpper {
+    z-index: 2;
+}
+
+#containerLower {
+    z-index: 1;
+}
+
+.navLower {
+    z-index: 0;
+}
+
+#li1 {
+    background: linear-gradient(to right, #41f4c7, white);
+}
+
+#li2 {
+    background: linear-gradient(to right, #87f2a0, white);
+}
+
+#li3 {
+    background: linear-gradient(to right, #c6f2ef, white);
+}
+
+#li4 {
+    background: linear-gradient(to right, #9ff2c7, white);
+}
+
+#li5 {
+    background: linear-gradient(to right, #abf2ef, white);
+}
+
+#li6 {
+    background: linear-gradient(to right, #adffad, white);
+}
+
+#li7 {
+    background: linear-gradient(to right, #abf2f9, white);
+}
+
+.navLower a {
+    color: black;
+}
+
+.navUpper:hover {
+    opacity: 0;
+}
+
+.navUpper a {
+    color: black;
+}
+
+#details {
+    position: absolute;
+    top: 0px;
+    height: 20%;
+    width: 100%;
+    border-style: solid;
+    border-image: linear-gradient(to right, black 0%, white 100%);
+    border-image-slice: 1;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#details img {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+#details label {
+    position: relative;
+    top: 60%;
+    left: 10px;
+    float: left;
+    clear: left;
+}
+
+.close {
+    z-index: 1;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+#navClose {
+    visibility: hidden;
+}
+
+#navOpen { 
+    position: absolute;
+    visibility: hidden;
+}
+
+main {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    background: radial-gradient(farthest-corner at 0% 0%, #d1f9db, white);
+}
+
+main label {
+    position: absolute;
+}
+
+.row1 {
+    top: 0%;
+}
+
+.row2 {
+    top: 20%;
+}
+
+.row3 {
+    top: 40%;
+}
+
+.row4 {
+    top: 60%;
+}
+
+.row5 {
+    top: 80%;
+}
+
+.column1 {
+    left: 0%;
+}
+
+.column2 {
+    left: 16.666%;
+}
+
+.column3 {
+    left: 33.333%;
+}
+
+.column4 {
+    left: 49.999%;
+}
+
+.column5 {
+    left: 66.666%;
+}
+
+.column6 {
+    left: 83.333%;
+}
+
+.singleSquare {
+    width: 16.666%;
+    height: 20%;
+    border: 1px solid grey;
+    margin: 1px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.doubleSquare {
+    width: 33.333%;
+    height: 20%;
+    border: 1px solid grey;
+    margin: 2px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.quadSquare {
+    width: 33.333%;
+    height: 40%;
+    border: 1px solid grey;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#timetable {
+    background-color: #c6f2ef;
+    text-align: center;
+}
+
+#assignments {
+    background-color: #abf2ef;
+    text-align: center;
+}
+
+#profile {
+    background-color: #adffad;
+    text-align: center;
+}
+
+#profile img {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+#modules {
+    background-color: #9ff2c7;
+    text-align: center;
+}
+
+#diary {
+    background-color: #87f2a0;
+    text-align: center;
+}
+
+#upcomingEvents {
+    background-color: #9cedce;
+    text-align: center;
+}
+
+#office365 {
+    background-color: #93f2e5;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 2px;
+}
+
+#logo {
+    z-index: 1;
+    width: 100%;
+    height: 20%;
+}
+
+#logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 16.666%;
+}
+
+main label a {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    vertical-align: center;
+    left: 0;
+    top: 0;
+}
+
+#headerBar {
+    height: 20%;
+    width: 100%;
+}
+
+.centerWrap { 
+    position: relative;
+    height: 100%; 
+    left: 16.666%;
+    width: 83.333%;
+    display: table;
+}
+
+#pageTitle {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5%;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+#backgroundImage {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+}
+
+#backgroundImage img {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.open {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    background-color: none;
+}
+
+.menuIcon {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    left: 5px;
+    background-color: black;
+    margin: 7px 0;
+}
+
+#messages {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 85%;
+    margin-left: -41px;
+    opacity: 0.8;
+}
+
+#messages img {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+#messagesOpen {
+    visibility: hidden;
+}
+
+.sideMenu {
+    position: relative;
+    left: 0;
+    top: 0%;
+    width: 80px; 
+    border: 1px solid black;
+    border-top: none;
+}
+
+#diarySideMenu {
+    height: 321px;
+}
+
+#timetableSideMenu {
+    height: 161px;
+}
+
+.sideMenuElement {
+    position: relative;
+    float: left;
+    clear: left;
+    height: 80px;
+    width: 80px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    z-index: 2;
+}
+
+.sideMenuElement label {
+    position: relative;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+
+.sideMenuElement img {
+    position: relative;
+    height: 50%;
+    width: 70%;
+    top: 5%;
+}
+
+.sideMenuElement input {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.selector {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    margin-top: 0px;
+    width: 80px;
+    height: 80px;
+    background-color: #87f2a0;
+    left: 1px;
+    opacity: 0.5;
+}
+
+#yearCalendar {
+    position: absolute;
+    height: 80%;
+    top: 20%;
+    left: 82px;
+    right: 0;
+    text-align: center;
+}
+
+#yearCalendar div {
+    position: relative;
+    width: 24%;
+    height: 32%;
+    float: left;
+    clear: right;
+    margin: 0.3%;
+    margin-left: 0.5%;
+    background-color: #eee;
+}
+
+#monthCalendar {
+    position: absolute;
+    height: 80%;
+    top: 100%;
+    left: 82px;
+    right: 0;
+    text-align: center;
+}
+
+#monthCalendar div {
+    position: relative;
+    width: 14%;
+    height: 20%;
+    float: left;
+    clear: right;
+    margin: 0.07%;
+    margin-left: 0.2%;
+    background-color: #eee;
+}
+
+.monthName {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: center;
+    left: 0;
+    background-color: #abf2ef;
+}
+
+.dayName {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    vertical-align: center;
+    left: 0;
+    background-color: #abf2ef;
+}
+
+#dayCalendar {
+    position: absolute;
+    height: 80%;
+    top: 100%;
+    left: 82px;
+    right: 0;
+    text-align: center;
+}
+
+#dayCalendarTimeBar {
+    position: relative;
+    height: 100%;
+    width: 10%;
+    border-right: 1px solid black;
+    background-color: #abf2ef;
+}
+
+#dayCalendarEventBar {
+    position: absolute;
+    top: 0;
+    left: 13%;
+    height: 100%;
+    width: 84%;
+    background-color: #eee;
+}
+
+#dayCalendarTimeBar label {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    float: left;
+    clear: left;
+    height: 4%;
+    padding: 0.5%;
+}
+
+#addEventElement label {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.plusA {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -2px;
+    height: 30px;
+    width: 4px;
+    background-color: black;
+}
+
+.plusB {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    margin-top: -2px;
+    margin-left: -15px;
+    height: 4px;
+    width: 30px;
+    background-color: black;
+}
+
+#timetableViewADiv {
+    position: absolute;
+    height: 80%;
+    top: 20%;
+    left: 82px;
+    right: 0;
+    text-align: center;
+}
+
+#timetableViewADiv div {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    float: left;
+    clear: right;
+    background-color: #eee;
+}
+
+#timetableViewADiv div label {
+    text-align: left;
+    padding-left: 5px;
+}
+
+#timetableViewBDiv {
+    position: absolute;
+    height: 80%;
+    top: 100%;
+    left: 82px;
+    right: 0;
+    text-align: center;
+    background-color: #eee;
+}
+
+
+#timetableViewBDiv table {
+    position: absolute;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+}
+
+#timetableViewBDiv table tr {
+    border: 1px solid black;
+}
+
+#timetableViewBDiv table td {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#timetableViewBDiv table th {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #abf2ef;
+}
+
+.tvBtime {
+    background-color: #abf2ef;
+}
+
+.selectorWide {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    margin-top: 0px;
+    width: 120px;
+    height: 40px;
+    background-color: #87f2a0;
+    left: 1px;
+    opacity: 0.5;
+}
+
+#modulesSideMenu {
+    width: 120px;
+    border-bottom: none;
+}
+
+#modulesSideMenu label {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: center;
+}
+
+.moduleView {
+    position: absolute;
+    height: 80%;
+    top: 20%;
+    left: 122px;
+    right: 0;
+    text-align: center;
+    background-color: #eee;
+}
+
+.moduleName {
+    position: relative;
+    width: 30%;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: center;
+    text-decoration: underline;
+    border: 1px solid black;
+}
+
+.moduleDescription {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    right: 0;
+    height: 150px;
+    line-height: 150px;
+    vertical-align: center;
+    border: 1px solid black;
+    border-left: none;
+}
+
+.moduleNotesAndTopics {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.moduleNoteDownload {
+    position: relative;
+    padding: 5%;
+}
+
+.moduleNoteDownload a {
+    text-decoration: none;
+}
+
+.moduleNoteDownload label {
+    position: relative;
+}
+
+.moduleTest {
+    position: relative;
+    padding: 5%;
+}
+
+.moduleTest label {
+    position: relative;
+}
+
+.moduleTest a {
+    text-decoration: none;
+}
+
+.moduleAssignments {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.maTitle {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    text-decoration: underline;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: center;
+}
+
+.moduleAssignmentDetails {
+    position: relative;
+    width: 100%;
+    padding: 5%;
+    top: 40px;
+    border-top: 1px solid black;
+}
+
+.moduleAssignmentDetails label {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.moduleLecturer {
+    position: absolute;
+    top: 150px;
+    left: 30%;
+    right: 30%;
+    bottom: 0;
+}
+
+.moduleLecturer label {
+    position: absolute;
+}
+
+.mlname {
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.mlemail {
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+.moduleLecturer img {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 40%;
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    vertical-align: center;
+}
+
+#assignmentsSideMenu {
+    width: 140px;
+    border-bottom: none;
+}
+
+#assignmentsSideMenu label {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: center;
+}
+
+.selectorAssignment {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    margin-top: 0px;
+    width: 140px;
+    height: 40px;
+    background-color: #87f2a0;
+    left: 1px;
+    opacity: 0.5;
+}
+
+.assignmentView {
+    position: absolute;
+    height: 80%;
+    top: 20%;
+    left: 142px;
+    right: 0;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid black;
+}
+
+.assignmentDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 60%;
+}
+
+.assignmentDetails h1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.assignmentDue {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+} 
+
+.assignmentModule {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.assignmentInformation {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.assignmentProvidedFiles {
+    position: absolute;
+    top: 60%;
+    left: 2.5%;
+    width: 40%;
+    height: 20%;
+    border: 1px solid black;
+}
+
+.assignmentProvidedFiles label {
+    left: 5%;
+}
+
+.assignmentUploadedFiles label {
+    left: 5%;
+}
+
+.assignmentUploadedFiles {
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    width: 30%;
+    height: 30%;
+    border: 1px solid black;
+}
+
+.assignmentUploadButton {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    height: 30%;
+    z-index: 2;
+}
+
+.assignmentUploadSubmit {
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.assignmentSubmitButton {
+    position: absolute;
+    top: 10%;
+    left: 62%;
+    height: 8%;
+    width: 26%;
+    z-index: 2;
+}
+
+#myProfileTopBar {
+    position: relative;
+    height: 25%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: #eee;
+}
+
+#myProfileTopBar img {
+    position: absolute;
+    left: 20%;
+    height: 80%;
+    width: 18%;
+    top: 10%;
+    border: 1px solid black;
+}
+
+#myProfileTopBar label {
+    position: relative;
+    float: left;
+    clear: left;
+    padding-top: 1.5%;
+    left: 50%;
+    line-height: 200%;
+    vertical-align: center;
+}
+
+#myProfilePersonalDetails {
+    position: absolute;
+    top: 45%;
+    margin-top: 2px;
+    bottom: 0;
+    width: 40%;
+    border-right: 1px solid black;
+    background-color: #eee;
+}
+
+#myProfilePersonalDetails h3 {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.mppdLabel {
+    position: relative;
+    left: 0;
+    width: 50%;
+    text-align: center;
+    clear: left;
+    float: left;
+}
+
+#r1 {
+    position: relative;
+    top: 10%;
+}
+
+#r2 {
+    position: relative;
+    top: 20%;
+}
+
+#r3 {
+    position: relative;
+    top: 30%;
+}
+
+.mppdContent {
+    position: relative;
+    top: 10%;
+    right: 0;
+    width: 50%;
+    text-align: center;
+    clear: right;
+    float: right;
+}
+
+#myProfileAttendance {
+    position: absolute;
+    top: 45%;
+    margin-top: 2px;
+    margin-left: 1px;
+    left: 40%;
+    bottom: 0;
+    right: 0;
+    background-color: #eee;
+}
+
+#myProfileAttendance h3 {
+    position: absolute;
+    top: 1%;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.myProfileModuleAttendance {
+    position: relative;
+    border: 1px solid black;
+    border-left: none;
+    border-top: none;
+    width: 100%;
+    height: 30%;
+}
+
+.myProfileModuleAttendance label{
+    position: relative;
+    clear: left;
+    float: left;
+}
+
+#moduleAttendanceContainer {
+    position: relative;
+    top: 8%;
+    height: 100%;
+    margin-top: -1px;
+    column-count: 2;
+    column-width: 50%;
+    column-gap: 0;
+}
+
+.mpmaLabel {
+    position: relative;
+    top: 35px;
+    margin-left: 15px;
+
+}
+
+.mpmaContent {
+    position: relative;
+    left: 50%;
+    top: 6px;
+}
+
+#messagesWindow {
+    z-index: 10;
+    position: absolute;
+    top: -90%;
+    height: 80%;
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+    background-color: #eee;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+
+#mclose {
+    position: absolute;
+    top: 30%;
+    left: 89%;
+}
+
+#mclose input {
+    visibility: hidden;
+}
+
+#messagesHeadbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+#messagesTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    line-height: 60px;
+    padding-left: 5%;
+    text-align: center;
+    vertical-align: center;
+    border-right: 1px solid black;
+}
+
+#messagesName {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    line-height: 60px;
+    padding-left: 5%;
+}
+
+#messagesConversations {
+    position: absolute;
+    width: 35%;
+    top: 61px;
+    bottom: 0;
+    border-right: 1px solid black;
+}
+
+#messagesAddConversation {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid black;
+    line-height: 60px;
+    vertical-align: center;
+}
+
+#messagesAddConversation div {
+    left: 10%;
+}
+
+#messagesAddConversation label {
+    position: absolute;
+    left: 20%;
+}
+
+#convplus1 {
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    height: 20px;
+}
+
+#convplus2 {
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+}
+
+.messagesConversation {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.messagesConversation img {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    top: 50%;
+    margin-top: -20px;
+    left: 5%;
+    border: 1px solid black;
+}
+
+.messagesConversation label {
+    position: absolute;
+    line-height: 60px;
+    vertical-align: center;
+    left: 40%;
+}
+
+.messagesChangeConversation {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.selectorMessages {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    margin-top: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #87f2a0;
+    left: 1px;
+    opacity: 0.3;
+}
+
+#messagesNewConversation {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    background-color: gold;
+}
+
+#messagesCurrentConversation {
+    position: absolute;
+    left: 35%;
+    top: 61px;
+    right: 0;
+    bottom: 0;
+}
+
+#messageBox {
+    position: absolute;
+    bottom: 1%;
+    height: 30px;
+    width: 70%;
+    left: 2%;
+    border: 1px solid black;
+}
+
+#submit {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 1%;
+    left: 75%;
+    margin-bottom: 2px;
+    border-radius: 100%;
+    border: 1px solid black;
+    background-color: #eee;
+}
+
+#addEventWindow {
+    z-index: 8;
+    position: absolute;
+    height: 60%;
+    width: 40%;
+    top: -80%;
+    left: 30%;
+    border: 1px solid black;
+    background-color: #eee;
+}
+
+#addEventWindow h1 {
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+
+#addEventWindow form {
+    position: relative;
+    top: 10%;
+}
+
+#diarySubmit {
+    position: relative;
+    left: 5%;
+    margin-top: 5%;
+    width: 10%;
+}
+
+.formSection {
+    position: relative;
+    left: 5%;
+    padding-top: 5%;
+}
+
+#eaclose {
+    position: absolute;
+    top: 5%;
+    left: 89%;
+}
+
+#eaclose input {
+    visibility: hidden;
+}

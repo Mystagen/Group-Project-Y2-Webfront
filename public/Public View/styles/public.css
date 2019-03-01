@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 22px;
+}
+
+#pvNav {
+    position: relative;
+    top: 0;
+    border-top: 1px solid black;
+    z-index: 2;
+    height: 50px;
+}
+
+#pvNav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#pvNav li {
+    flex-grow: 1;
+    background: radial-gradient(white, #def9f8);
+    border-bottom: 1px solid black;
+}
+
+.pvDropDownHeader {
+    block-size: 50px;
+}
+
+.pvDropDownHeader, .pvDropDownHeader label {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.pvDropDownHeader label, #pvNav a {
+    cursor: pointer;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+.pvDropDownHeader:hover .pvDropDownHidden {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pvDropDownHidden:hover {
+    display: flex;
+}
+
+.pvDropDownHidden {
+    position: relative;
+    display: none;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.pvDropDownHidden a {
+    display: flex;
+    background: radial-gradient(white, #def9f8);
+}
+
+.searchBar {
+    text-align: center;
+}
+
+.course {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    margin-top: 5%;
+    margin-left: -40%;
+}
+
+.course a {
+    text-decoration: none;
+    display: block;
+}
+
+.course h2 {
+    text-align: center;
+    margin-top: 5%;
+    color: black;
+}
+
+.course p {
+    margin-top: 2%;
+    color: black;
+}
+
+#pvTopBanner {
+    border-right: 1px solid black;
+    height: 20%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#pvTopBannerBackground {
+    width: 100%;
+    height: 100%;
+}
+
+#pvTopBannerLogo {
+    position: relative;
+    top: -100%;
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+}
+
+.imageCaroselContainer {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    margin-left: -25%;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    margin-bottom: 5%;
+}
+
+.imageCaroselContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#imgLeft, #imgRight {
+    position: absolute;
+    background-color: #333;
+    border: none;
+    color: white;
+    margin-top: -25px;
+    line-height: 50px;
+    vertical-align: center;
+    top: 50%;
+    height: 50px;
+    width: 20px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#imgLeft {
+    left: 5%;
+}
+
+#imgRight {
+    right: 5%;
+}
+
+#imgLeft:hover {
+    opacity: 1;
+}
+
+#imgRight:hover {
+    opacity: 1;
+}
+
+#img1 {
+    opacity: 1;
+}
+
+#img2 {
+    opacity: 0;
+}
+
+#img3 {
+    opacity: 0;
+}
+
+.dotContainer {
+    position: relative;
+    top: 90%;
+    left: 50%;
+    margin-left: -8%;
+    width: 16%;
+    height: 10%;
+}
+
+#dot1 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #333;
+    opacity: 0.8;
+}
+
+#dot2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #333;
+    opacity: 0.5;
+}
+
+#dot3 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #333;
+    opacity: 0.5;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    background: radial-gradient(farthest-corner at 0% 0%, #d1f9db, white);
+    padding-bottom: 5%;
+}
+
+h1 {
+    position: relative;
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: #d1f9db;
+    bottom: 0px;
+    padding: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+}
+
+footer li {
+    flex-direction: row;
+    float: left;
+}
+
+#listOfAssistance {
+    margin-top: 1%;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.livingImage {
+    position: relative;
+    width: 80%;
+    height: 40%;
+    border: 1px solid black;
+    left: 50%;
+    margin-left: -40%;
+    margin-top: 5%;
+}
+
+form {
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+    position: relative;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input[type=text], form input[type=password] {
+    margin-bottom: 1%;
+    width: 50%;
+    float: right;
+}
+
+form input[type=submit] {
+    margin-top: 5%;
+    position: relative;
+    left: 50%;
+    margin-left: -25%;
+    width: 40%;
+}
