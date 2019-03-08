@@ -1,22 +1,27 @@
 <div id="myProfileTopBar">
-    <img src="#" alt="Profile Picture">
-    <label>{name}</label>
-    <label>{course}</label>
-    <label>{student number}</label>
+    <img src="../Student View/images/<?=$profilePicture?>" alt="Profile Picture" class="profilePicture">
+    <label><?= $firstname . " " . $surname?></label>
+    <label><?= $course?></label>
+    <label><?= $studentID?></label>
 </div>
 <div id="myProfilePersonalDetails">
     <h3>Personal Details</h3>
     <div id="r1">
         <label class="mppdLabel">Address:</label>
-        <label class="mppdContent">{address}</label>
+        <label class="mppdContent"><?=$address['house']?><br>
+            <?=$address['street']?><br>
+            <?=$address['city']?><br>
+            <?=$address['county']?><br>
+            <?=$address['postcode']?><br>
+        </label>
     </div>
     <div id="r2">
         <label class="mppdLabel">Contact Number:</label>
-        <label class="mppdContent">{phone number}</label>
+        <label class="mppdContent"><?=$phone?></label>
     </div>
     <div id="r3">
         <label class="mppdLabel">Email:</label>
-        <label class="mppdContent">{email address}</label>
+        <label class="mppdContent"><?=$email?></label>
     </div>
 </div>
 <div id="myProfileAttendance">

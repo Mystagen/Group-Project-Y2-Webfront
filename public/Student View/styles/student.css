@@ -1299,3 +1299,17 @@ main label a {
 #eaclose input {
     visibility: hidden;
 }
+
+#backToHome {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+    text-align: center;
+    z-index: 2;
+    padding: 5%;
+}
+
+.profilePicture {
+    z-index: 2;
+}

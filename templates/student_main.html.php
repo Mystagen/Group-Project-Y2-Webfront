@@ -25,8 +25,9 @@
             </label>
             <div id="details">
                 <img src="/Student View/images/blankProfilePicture.jpg" alt="Profile Picture">
-                <label id="firstname">Firstname</label>
-                <label id="surname">Surname</label>
+                <!--FIX THESE VARIABLES-->
+                <label id="firstname"><?=$firstname?></label>
+                <label id="surname"><?=$surname?></label>
             </div>
             <ul id="containerUpper">
                 <li class="navUpper"><a href="student_home">Dashboard</a></li>
