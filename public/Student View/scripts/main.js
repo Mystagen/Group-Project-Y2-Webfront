@@ -78,6 +78,8 @@ $(document).ready(function() {
         var topChange = targetLocation.top - currentLocation.top;
         var moveAmmount = topChange + $('.selectorWide').position().top;
         $('.selectorWide').animate({'top': moveAmmount});
+        $('.moduleView').animate({'top' : '100%'});
+        $('#modulepanel' + $(this).attr('id').charAt($(this).attr('id').length-1)).animate({'top' : '20%'});
     });
 
     $('.assignmentButton').click(function() {

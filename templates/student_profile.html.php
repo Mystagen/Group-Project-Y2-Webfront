@@ -1,8 +1,8 @@
 <div id="myProfileTopBar">
     <img src="../Student View/images/<?=$profilePicture?>" alt="Profile Picture" class="profilePicture">
-    <label><?= $firstname . " " . $surname?></label>
-    <label><?= $course?></label>
-    <label><?= $studentID?></label>
+    <label><?="Name: " . $firstname . " " . $surname?></label>
+    <label><?="Course: " . $course?></label>
+    <label><?="Student ID: " . $studentID?></label>
 </div>
 <div id="myProfilePersonalDetails">
     <h3>Personal Details</h3>

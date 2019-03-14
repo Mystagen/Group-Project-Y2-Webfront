@@ -2,10 +2,12 @@
 
 class PublicController {
 
-    private $table;
+    private $pdo;
+    private $studentAccount;
 
-    public function __construct($table) {
-        $this->table = $table;
+    public function __construct($pdo) {
+        $this->pdo = $pdo;
+        $this->studentAccount = new DatabaseTable($this->pdo,'student_accounts','student_id');
     }
 
     public function home() {
@@ -84,7 +86,7 @@ class PublicController {
         return [
             'template' => 'public_studentlogin.html.php',
             'title' => $title,
-            'variables' => []
+            'variables' => ['connection' => $this->studentAccount]
         ];
     }
 }

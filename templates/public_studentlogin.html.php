@@ -10,10 +10,15 @@
 </form>
 
 <?php 
-    if (isset($_POST['username']) && isset($_POST['username'])) {
-        //validation code
-        //Sets student id
-        $_SESSION['studentID'] = '12345678';
-        header('location: student_home');
+    if (isset($_POST['username']) && isset($_POST['password'])) {
+        
+        $loginResult = $connection->find('username', $_POST['username']);
+        
+        if ($loginResult[0]['password'] == $_POST['password']) {
+            $_SESSION['studentID'] = $loginResult[0]['student_id'];
+            header('location: student_home');
+        } else {
+            echo "<h3>Incorrect username or password";
+        }
     }
 ?>

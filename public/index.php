@@ -66,6 +66,11 @@ if ($route == '' && (!(isset($_SESSION['studentID'])))) {
 $content = loadTemplate('../templates/' . $page['template'], $page['variables']);
 $title = $page['title'];
 
+if(isset($page['variables']['firstname'])) {
+    $firstname = $page['variables']['firstname'];
+    $surname = $page['variables']['surname'];
+}
+
 if (!($publicView)) {
     require '../templates/student_main.html.php';
 } else {

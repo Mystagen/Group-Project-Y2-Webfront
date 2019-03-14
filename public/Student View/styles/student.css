@@ -689,11 +689,15 @@ main label a {
 .moduleView {
     position: absolute;
     height: 80%;
-    top: 20%;
+    top: 100%;
     left: 122px;
     right: 0;
     text-align: center;
     background-color: #eee;
+}
+
+#modulepanel0 {
+    top: 20%;
 }
 
 .moduleName {
