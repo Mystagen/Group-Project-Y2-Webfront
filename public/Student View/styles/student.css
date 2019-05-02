@@ -608,13 +608,26 @@ main label a {
     text-align: center;
 }
 
-#timetableViewADiv div {
+.viewAElement {
     position: relative;
     width: 100%;
     height: 20%;
     float: left;
     clear: right;
     background-color: #eee;
+}
+
+.timetableViewAContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    height: 100%;
+}
+
+.timetableViewAContent label {
+    position: relative;
+    font-size: 15px;
 }
 
 #timetableViewADiv div label {
@@ -697,6 +710,21 @@ main label a {
 }
 
 #modulepanel0 {
+    top: 20%;
+}
+
+.assignmentView {
+    position: absolute;
+    height: 80%;
+    top: 100%;
+    left: 142px;
+    right: 0;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid black;
+}
+
+#assignmentpanel0 {
     top: 20%;
 }
 
@@ -841,6 +869,7 @@ main label a {
     width: 140px;
     height: 40px;
     line-height: 40px;
+    font-size: 18px;
     vertical-align: center;
 }
 
@@ -854,17 +883,6 @@ main label a {
     background-color: #87f2a0;
     left: 1px;
     opacity: 0.5;
-}
-
-.assignmentView {
-    position: absolute;
-    height: 80%;
-    top: 20%;
-    left: 142px;
-    right: 0;
-    text-align: center;
-    background-color: #eee;
-    border: 1px solid black;
 }
 
 .assignmentDetails {
@@ -1053,6 +1071,7 @@ main label a {
     border-top: none;
     width: 100%;
     height: 30%;
+    -webkit-column-break-inside: avoid;
 }
 
 .myProfileModuleAttendance label{

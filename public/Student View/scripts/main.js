@@ -88,6 +88,8 @@ $(document).ready(function() {
         var topChange = targetLocation.top - currentLocation.top;
         var moveAmmount = topChange + $('.selectorAssignment').position().top;
         $('.selectorAssignment').animate({'top': moveAmmount});
+        $('.assignmentView').animate({'top' : '100%'});
+        $('#assignmentpanel' + $(this).attr('id').charAt($(this).attr('id').length-1)).animate({'top' : '20%'});
     });
 
     $('.messagesChangeConversation').click(function() {

@@ -27,47 +27,16 @@
 <div id="myProfileAttendance">
     <h3>Attendance</h3>
     <div id="moduleAttendanceContainer">
-        <div class="myProfileModuleAttendance">
-            <h3 class="mpmaTitle">{Module Name}</h3>
-            <label class="mpmaLabel">Attended:</label>
-            <label class="mpmaContent">{x%}</label>
-            <label class="mpmaLabel">Missed:</label>
-            <label class="mpmaContent">{y%}</label>
-        </div>
-        <div class="myProfileModuleAttendance">
-            <h3 class="mpmaTitle">{Module Name}</h3>
-            <label class="mpmaLabel">Attended:</label>
-            <label class="mpmaContent">{x%}</label>
-            <label class="mpmaLabel">Missed:</label>
-            <label class="mpmaContent">{y%}</label>
-        </div>
-        <div class="myProfileModuleAttendance">
-            <h3 class="mpmaTitle">{Module Name}</h3>
-            <label class="mpmaLabel">Attended:</label>
-            <label class="mpmaContent">{x%}</label>
-            <label class="mpmaLabel">Missed:</label>
-            <label class="mpmaContent">{y%}</label>
-        </div>
-        <div class="myProfileModuleAttendance">
-            <h3 class="mpmaTitle">{Module Name}</h3>
-            <label class="mpmaLabel">Attended:</label>
-            <label class="mpmaContent">{x%}</label>
-            <label class="mpmaLabel">Missed:</label>
-            <label class="mpmaContent">{y%}</label>
-        </div>
-        <div class="myProfileModuleAttendance">
-            <h3 class="mpmaTitle">{Module Name}</h3>
-            <label class="mpmaLabel">Attended:</label>
-            <label class="mpmaContent">{x%}</label>
-            <label class="mpmaLabel">Missed:</label>
-            <label class="mpmaContent">{y%}</label>
-        </div>
-        <div class="myProfileModuleAttendance">
-            <h3 class="mpmaTitle">{Module Name}</h3>
-            <label class="mpmaLabel">Attended:</label>
-            <label class="mpmaContent">{x%}</label>
-            <label class="mpmaLabel">Missed:</label>
-            <label class="mpmaContent">{y%}</label>
-        </div>
+        <?php
+        for ($i = 0; $i < sizeof($modules); $i++) {
+            echo '<div class="myProfileModuleAttendance">';
+                echo '<h3 class="mpmaTitle">' . $modules[$i] . '</h3>';
+                echo '<label class="mpmaLabel">Attended:</label>';
+                echo '<label class="mpmaContent">' . $attendance[$i][0] . '</label>';
+                echo '<label class="mpmaLabel">Missed:</label>';
+                echo '<label class="mpmaContent">' . ($attendance[$i][1] - $attendance[$i][0]) . '</label>';
+            echo '</div>';
+        }
+        ?>
     </div>
 </div>

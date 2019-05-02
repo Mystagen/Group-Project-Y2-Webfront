@@ -16,7 +16,7 @@
 for ($i=0; $i<sizeof($moduleInformation); $i++) { ?>
     <div class="moduleView" id = "<?="modulepanel" . $i?>" >
         <div class="moduleName">
-            <h1><?=$moduleInformation[$i]['title']?></h1>
+            <h1><?=$moduleInformation[$i]['title'] . ' - ' . $moduleInformation[$i]['module_code']?></h1>
         </div>
         <div class="moduleDescription">
             <p><?=$moduleInformation[$i]['description']?></p>
@@ -45,14 +45,15 @@ for ($i=0; $i<sizeof($moduleInformation); $i++) { ?>
         </div>
         <div class="moduleAssignments">
             <label class="maTitle">Assignments</label>
-            <div class="moduleAssignmentDetails">
-                <label>{Assignment Title}</label>
-                <label>{Due Date}</label>
-            </div>
-            <div class="moduleAssignmentDetails">
-                <label>{Assignment Title}</label>
-                <label>{Due Date}</label>
-            </div>
+            <?php
+            for ($x = 0; $x < sizeof($moduleInformation[$i]['assignment']['assignment_title']); $x++) {
+                echo '<div class="moduleAssignmentDetails">';
+                    echo '<label>Title: ' . $moduleInformation[$i]['assignment']['assignment_title'][$x] . '</label>';
+                    echo '<br>';
+                    echo '<label>Due Date: ' . $moduleInformation[$i]['assignment']['assignment_due_date'][$x] . '</label>';
+                echo '</div>';
+            }
+            ?>
         </div>
 
     </div>

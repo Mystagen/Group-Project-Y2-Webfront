@@ -25,7 +25,6 @@
             </label>
             <div id="details">
                 <img src="/Student View/images/blankProfilePicture.jpg" alt="Profile Picture">
-                <!--FIX THESE VARIABLES-->
                 <label id="firstname"><?=$firstname?></label>
                 <label id="surname"><?=$surname?></label>
             </div>

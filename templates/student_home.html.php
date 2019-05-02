@@ -15,5 +15,5 @@
 </label>
 <label class="singleSquare row4 column6" id="profile">
     <a href="student_profile">Profile</a>
-    <img src="images/blankProfilePicture.jpg" alt="Profile Picture">
+    <img src="/Student View/images/blankProfilePicture.jpg" alt="Profile Picture">
 </label>

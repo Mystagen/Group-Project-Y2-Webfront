@@ -2,17 +2,17 @@
 </label>
 <div class="sideMenu" id="diarySideMenu">
     <label class="sideMenuElement" id="yearMenuElement">
-        <img src="images/yearLogo.png" alt="Year">
+        <img src="/Student View/images/yearLogo.png" alt="Year">
         <input id="yearDiaryButton" type="button"></input>
         <label>Year</label>
     </label>
     <label class="sideMenuElement" id="monthMenuElement">
-        <img src="images/monthLogo.png" alt="Month">
+        <img src="/Student View/images/monthLogo.png" alt="Month">
         <input id="monthDiaryButton" type="button"></input>
         <label>Month</label>
     </label>
     <label class="sideMenuElement" id="dayMenuElement">
-        <img src="images/dayLogo.png" alt="Day">
+        <img src="/Student View/images/dayLogo.png" alt="Day">
         <input id="dayDiaryButton" type="button"></input>
         <label>Day</label>
     </label>
